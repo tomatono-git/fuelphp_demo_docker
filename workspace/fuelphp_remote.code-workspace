@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "fuelphp_demo",
+			"path": "."
+		},
+	],
+	"settings": {
+		"markdown.preview.breaks": true,
+		"[markdown]": {
+			"editor.insertSpaces": true,
+			"editor.tabSize": 2,
+		},
+		"files.exclude": {
+			"docker/php/html/*": true
+		},
+		"search.exclude": {
+			"docker/php/html": true
+		},
+	},
+}

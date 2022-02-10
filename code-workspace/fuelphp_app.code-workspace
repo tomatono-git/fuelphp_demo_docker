@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../fuelphp_demo"
+		},
+	],
+	"settings": {
+		"php.validate.executablePath": "G:/pg/git/fuelphp/php/php-7.4.27-Win32-vc15-x64/php.exe",
+		"markdown.preview.breaks": true,
+		"[markdown]": {
+			"editor.insertSpaces": true,
+			"editor.tabSize": 2,
+		}
+	}
+}

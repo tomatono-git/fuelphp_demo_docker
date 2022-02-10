@@ -1,0 +1,25 @@
+{
+    "name": "fuelphp_php",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "fuel_php",
+    // "remoteUser": "dev"
+    "workspaceFolder": "/var/www/html",
+    "extensions": [
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "xdebug.php-debug",
+        // "bmewburn.vscode-intelephense-client",
+        "zobo.php-intellisense",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "esbenp.prettier-vscode",
+        "mechatroner.rainbow-csv",
+    ],
+    "settings": {
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[json]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+    },
+}
