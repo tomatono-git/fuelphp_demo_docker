@@ -1,7 +1,8 @@
 {
     "name": "fuelphp_php",
     "dockerComposeFile": "../docker-compose.yml",
-    "service": "fuel_php",
+    "service": "php",
+    // "service": "fuel_php",
     // "remoteUser": "dev"
     "workspaceFolder": "/var/www/html",
     "extensions": [

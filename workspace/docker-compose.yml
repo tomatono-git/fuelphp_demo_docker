@@ -1,7 +1,8 @@
 version: "3"
 services:
-  fuel_web:
-    container_name: fuel_web
+  web:
+  # fuel_web:
+    # container_name: fuel_web
     image: nginx:latest
     ports: ["8080:80"]
     volumes:
@@ -9,16 +10,20 @@ services:
       - ./docker/nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf
     restart: always
     depends_on:
-      - fuel_php
+      - php
+      # - fuel_php
 
-  fuel_php:
-    container_name: fuel_php
+  php:
+  # fuel_php:
+    # container_name: fuel_php
     build: ./docker/php
     depends_on:
-      - fuel_db
+      - db
+      # - fuel_db
 
-  fuel_db:
-    container_name: fuel_db
+  db:
+  # fuel_db:
+    # container_name: fuel_db
     image: postgres:14.1
     build: ./docker/postgres
     ports: [15432:5432]
@@ -31,9 +36,10 @@ services:
       TZ: Asia/Tokyo
     restart: always
 
-  fuel_pgadmin4:
+  pgadmin4:
+  # fuel_pgadmin4:
+    # container_name: fuel_pgadmin4
     image: dpage/pgadmin4
-    container_name: fuel_pgadmin4
     ports:
         - 8081:81
     volumes:
@@ -44,7 +50,8 @@ services:
         PGADMIN_LISTEN_PORT: 81
     hostname: pgadmin4
     depends_on: 
-      - fuel_db
+      - db
+      # - fuel_db
     restart: always
 
 volumes:

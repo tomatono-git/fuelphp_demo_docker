@@ -33,11 +33,29 @@
   ```
 
   ```powershell
+  docker restart php
+  ```
+<!-- 
+  ```powershell
   docker restart fuel_php
   ```
+-->
 
 - コンテナに入る
 
+  php
+
+  ```powershell
+  docker container exec -it php bash
+  ```
+
+  web
+
+  ```powershell
+  docker container exec -it web bash
+  ```
+
+<!--
   fuel_php
 
   ```powershell
@@ -49,6 +67,7 @@
   ```powershell
   docker container exec -it fuel_web bash
   ```
+-->
 
   Dockerのイメージを検索
 
@@ -240,7 +259,8 @@ LINE 2:  "id" int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
     pass
 - pgadmin4
   - ホスト名
-    fuel_db
+    db
+    <!-- fuel_db -->
     ※docker-compose.yml の サービス名になる。
   - ポート番号
     5432
